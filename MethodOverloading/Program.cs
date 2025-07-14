@@ -5,13 +5,18 @@
 	//create a method named add that accepts two ints and returns the sum
 	public static int Add (int a, int b)
 	{
-		return (a + b);
+		int output = a + b;
+		Console.WriteLine(output);		
+		return output;
+
 	}
 
 	// now create an overload of add that allows you to add two decimals together
 	public static decimal Add (decimal a, decimal b)
 	{
-		return (a + b);
+		decimal outp = a + b;
+		Console.WriteLine(outp);
+		return outp;
 	}
 	// now create another overload of the Add method that returns a string and accepts 3 parameters
 	// two integers and one boolean
@@ -36,8 +41,8 @@
 
         static void Main(string[] args)
         {
-		var x = 13;
-		var y = 12;
+		int x = 13;
+		int y = 12;
 
 		var answer = Add(x,y);
 
